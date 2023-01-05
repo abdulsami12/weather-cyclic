@@ -1,0 +1,47 @@
+body{
+    color: aliceblue;
+    background-image: url("https://media.istockphoto.com/photos/weather-forecast-picture-id477110708?k=20&m=477110708&s=170667a&w=0&h=ZHYBBdp8EiYpnSewH8b_Nf-c84ReSIkHpFBnw_AjXqw=");
+
+background-color: rgba(0,  0,0,0.7);
+background-position: center;
+background-size: cover;
+
+}
+
+
+.sear{
+
+border-radius: 30px;
+border: none;
+color: aliceblue;
+}
+.bt-sear{
+    color: aliceblue;
+
+border: none;
+}
+.main-search{
+    display:flex ;
+width: 340px;
+border-radius: 30px;
+}
+
+.weather-font{
+font-size: 15px;
+font-weight: 900;
+}
+.degree{
+    position: relative;
+    left: -12px;
+    width: 90px;
+}
+
+.last-text{
+    font-size: 17px;
+    font-weight: 900;
+}
+.main-border{
+    border-color: rgba(137, 43, 226, 0.322);
+    border-style: solid;
+    border-radius: 20px;
+}

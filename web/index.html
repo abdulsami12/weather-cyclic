@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body class="bg-dark">
+  
+  <div class="container col-9  mt-5 main-border bg-dark bg-opacity-50 shadow-lg">
+<div class="ms-5 pt-3 ">
+
+  <form onsubmit="getweather(); return false">
+    
+      <div class=" mt-4  border main-search bg-secondary bg-gradient border-secondary">
+
+        <input type="text" id="search" size="18px" class="sear p-2 bg-transparent fs-4 "> <br>
+        <button type="submit " class="bt-sear bg-transparent"> <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+    </form>
+    <div class="mt-3">
+
+      <p class="mb-0">CURRENT WEATHER</p>
+      <P>1:53 PM</P>
+    </div>
+    <div class="d-flex">
+      <img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Status-weather-clear-icon.png" alt=""
+        width="76px">
+      <h1 class=" pt-3 fw-bold " id="temperature"> <sup class=" degree"> &deg;</sup> </h1>
+
+      <h1 class="weather-font pt-3 mt-4">Sunny </h1>
+      <h1 class="weather-font pt-3 mt-4 px-1"> | </h1>
+      <h1 class=" weather-font pt-3 mt-4" id="feel"> </h1>
+    </div>
+
+    <P class="mt-3">there will be <span id="cloud"></span> . The High will be <span id="high_tem"></span>&deg; .</P>
+
+    <div class="border d-flex my-5 col-7  mx-auto ro rounded-pill p-2">
+
+      <div class="text-center px-4 border-end">
+
+        <h1 class="last-text">WIN</h1>
+        <h1 class="last-text" ><span id="wind">0</span>  km/h</h1>
+      </div>
+      <div class=" text-center  px-4 border-end">
+
+        <h1 class="last-text">HUMIDITY</h1>
+        <h1 class="last-text"><span id="humidity"
+          ></span>%</h1>
+      </div>
+      <div class="text-center  px-4 border-end">
+
+        <h1 class="last-text">VISIBLITY</h1>
+        <h1 class="last-text" id="visible"><span id="visiblity"></span> km</h1>
+      </div>
+      <div class="text-center  mx-4">
+
+        <h1 class="last-text">PRESSURE</h1>
+        <h1 class="last-text"><span id="pressure"></span> mb</h1>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js">
+
+
+
+</script>
+
+</html>
+
+
+
+
+<!-- https://api.openweathermap.org/data/2.5/weather?units=metric&appid=cddb792ae2c29f173f1d06e0bb7d9a2f=karachi -->
