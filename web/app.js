@@ -5,7 +5,7 @@ let baseURL = ""
 if(url.split(":")[0]=='http'){
     baseURL=`http://localhost:5001`
 }else{
-    baseURL = `http://myapp.cyclic.app`
+    baseURL = `https://tan-frail-chicken.cyclic.app`
 }
 let getweather = () => {
     let CityName = document.querySelector("#search").value
